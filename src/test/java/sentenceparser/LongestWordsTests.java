@@ -93,6 +93,13 @@ public class LongestWordsTests {
         assertEquals("[bc]", getLongestWordsForSentence(sentence));
     }
 
+    @Test
+    public void shouldIncludeDuplicates() throws Exception {
+        String sentence = "abc abc aa bb";
+
+        assertEquals("[abc, abc]", getLongestWordsForSentence(sentence));
+    }
+
     // helpers
     private String getLongestWordsForSentence(String sentence) {
         Map.Entry<List<String>, Integer> entry = SentenceParser.longestWordWithLength(sentence).entrySet().iterator().next();
