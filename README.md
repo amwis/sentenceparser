@@ -14,4 +14,4 @@ Create methods that parse string input, isolate longest/shortest words from the 
 This is a maven project with surefire plugin as dependency
 
 * Easiest option is to run it inside an IDE (tested in Intellij)
-* Alternatively go to project root and run `mvn test`
+* Alternatively go to project root and run `mvn test` (assuming maven is installed on the machine)
